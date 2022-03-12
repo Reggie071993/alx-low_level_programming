@@ -1,49 +1,25 @@
-int main(void)
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 
+/**
+*main - Entry point
+*
+*Return: Always 0 (Success)
+
+int main(void)
 {
-    char ch = 'a';
-	while(ch <= 'z')
+	char ch = 'a';
+	int i = 0;
+
+	while(i < 26)
 	{
-		if (ch != 'e' && ch != 'q')
-		{
+		if (ch != 'q' && ch != 'e')
 			putchar(ch);
-		}
+
 		ch++;
+		i++;
 	}
 	putchar('\n');
 
-    return 0;
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-
-	for (char ch = 'a'; ch <= 'z'; ch++)
-		if (ch != 'e' && ch != 'q')
-	{
-		{
-			putchar(ch);
-		}
-	}
-	putchar('\n');
-
-    return 0;
-}
-
-int main(void)
-{
-
-	for (char ch ='a'; ch <= 'z'; ch++)
-	{
-		if (ch == 'e' || ch == 'q')
-		    ch++;
-		putchar(ch);
-
-	}
-	putchar('\n');
-
-    return 0;
+    	return 0;
 }
