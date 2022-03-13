@@ -1,14 +1,22 @@
 #include <stdio.h>
 
+/**
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	int = i;
-
-	for (i = 0; i <= 9; i++)
+	char ch = '0';
+	int i = 0;
+	/* your code goes there */
+	while (i < 10)
 	{
-		printf("%d", i);
+		putchar (ch);
+		ch++;
+		i++;
 	}
-	printf("\n");
-
-    return 0;
+	putchar('\n');
+	return (0);
 }
