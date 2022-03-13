@@ -5,12 +5,13 @@
 *main - Entry point
 *
 *Return: Always 0 (Success)
+*/
 
 int main(void)
 {
 	char ch = 'a';
 	int i = 0;
-
+	/* your code goes there*/
 	while(i < 26)
 	{
 		if (ch != 'q' && ch != 'e')
@@ -20,6 +21,5 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
-
-    	return 0;
+    	return (0);
 }
