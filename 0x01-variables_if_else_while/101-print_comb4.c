@@ -40,7 +40,7 @@ int main(void)
 		position_aa++;
 		a = position_a;
 		position_b++;
-		b = position_d;
+		b = position_b;
 		c++;
 	}
 	putchar('\n');
