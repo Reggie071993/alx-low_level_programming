@@ -16,9 +16,9 @@ int main(void)
 	while (a <= 99)
 	{
 		b = a + 1;
-		while (b <=99)
+		while (b <= 99)
 		{
-			last = !(a == 98 && b ==99);
+			last = !(a == 98 && b == 99);
 			putchar (48 + a / 10);
 			putchar (48 + a % 10);
 			putchar (' ');
