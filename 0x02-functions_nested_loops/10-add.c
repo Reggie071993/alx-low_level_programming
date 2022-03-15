@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * add - adds two numbers
 * @i: The first number
@@ -8,7 +7,7 @@
 * Return: The sum
 */
 
-int add( int i, int j)
+int add(int i, int j)
 {
 	return (i + j);
 }
