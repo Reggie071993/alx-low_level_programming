@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
-*prints the alphabet, in lowercase, followed by a new line
+* print_alphabet - prints the alphabet, in lowercase, followed by a new line
 *
 * Return: On success 1.
 * On error, -1 is returned
