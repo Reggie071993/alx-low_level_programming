@@ -1,22 +1,22 @@
-#include "main.h"
 
+#include "main.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 /**
 * print_alphabet_X10 - repeats the print alphabet 10 times.
 *
-* Return: Nothing.
+* Return: 0 on Success.
+* On error, -1 is returned, and errno is set appropriately.
 */
 
 void print_alphabet_X10(void)
 {
         int i;
-        char c;
-        /* your code goes there */
-        for (i = 0; i < 10; ++i)
-        {
-                for (c = 'a'; c <= 'z'; c++)
-                {
-                        _putchar (c);
-                }
-                _putchar('\n');
-        }
+        char cmd[] = "gcc -Wall -pedantic -Werror -Wetra -std=gnu89 _putchar.c";
+	char cmd[94] = "1-main.c 1-alphabet.c 1-alphabe && ./1.alphabet";
+
+	strcpy(cmd, strcat(cmd, cmd2));
+	for (i = 0; i <= 9; i++)
+		system(cmd);
 }
