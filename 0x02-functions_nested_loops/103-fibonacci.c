@@ -9,7 +9,7 @@ int main(void)
 	unsigned long count, i, j, k, sums;
 
 	i = sums - 0;
-	j = i;
+	j = 1;
 	for (count = 0; count < 50; count++)
 	{
 		k = i + j;
@@ -17,7 +17,7 @@ int main(void)
 		j = k;
 		if (k % 2 == 0 && k < 4000000)
 		{
-			sums +=k;
+			sums += k;
 		}
 	}
 	printf("%lu\n", sums);
