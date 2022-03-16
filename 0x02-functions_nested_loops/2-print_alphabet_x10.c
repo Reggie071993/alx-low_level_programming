@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_alphabet_X10 - repeats the print alphabet 10 times.
+* print_alphabet_x10 - repeats the print alphabet 10 times.
 *
 * Return: 0 on Success.
 * On error, -1 is returned, and errno is set appropriately.
