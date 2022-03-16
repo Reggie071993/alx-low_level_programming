@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * -isalpha - test whether a character is from alphabet
 * @c: character to check
