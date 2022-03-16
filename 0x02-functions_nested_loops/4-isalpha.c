@@ -7,10 +7,9 @@
 * Return: 1 character from the alphabet
 * Return: 0 otherwise
 */
+
 int _isalpha(int c)
 {
-	int c;
-	
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
