@@ -4,8 +4,7 @@
 * _isalpha - test whether a character is from alphabet
 * @c: character to check
 *
-* Return: 1 character from the alphabet
-* Return: 0 otherwise
+* Return: 1 character from the alphabet' 0 otherwise
 */
 
 int _isalpha(int c)
