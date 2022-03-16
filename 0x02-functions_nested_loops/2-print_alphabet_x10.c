@@ -7,7 +7,7 @@
 * On error, -1 is returned, and errno is set appropriately.
 */
 
-void print_alphabet_X10(void)
+void print_alphabet_x10(void)
 {
         int i;
         char c;
