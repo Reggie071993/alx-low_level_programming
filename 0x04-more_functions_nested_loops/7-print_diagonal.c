@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 * print_diagonal - prints diagonal line
-* #n: integer
+* @n: integer
 * Return: Always 0.
 */
 
