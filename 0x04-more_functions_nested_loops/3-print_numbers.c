@@ -3,7 +3,7 @@
 * print_numbers - function that prints number.
 */
 
-int print_numbers(void)
+void print_numbers(void)
 {
 	int i;
 
