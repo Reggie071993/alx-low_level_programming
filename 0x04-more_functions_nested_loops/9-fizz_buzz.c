@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * main - Entry point
 *
-* Return: void
+* Return: Always 0 (Success)
 */
 
 int main(void)
@@ -15,11 +16,11 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("fizzBuzz ");
+			printf("FizzBuzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("fizz ");
+			printf("Fizz ");
 		}
 		else if (i % 5 == 0)
 		{
