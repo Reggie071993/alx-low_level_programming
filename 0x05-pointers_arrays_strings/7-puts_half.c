@@ -1,4 +1,4 @@
-"include "main.h"
+#include "main.h"
 /**
 * puts_half - takes a pointer to an int as parameter
 * @str: chain of character
