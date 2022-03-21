@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strlen - takes a pointer to anint as a parameter and 
+* _strlen - takes a pointer to anint as a parameter and
 * updates the value it points to to 98
 * @s: chain of characters
 *
