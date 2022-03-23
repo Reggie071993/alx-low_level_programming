@@ -3,6 +3,7 @@
 * reverse_array -  function that reverses the content of an array of integers.
 * @a: tab integer.
 * @n: number.
+* Return: 1 or 0
 */
 
 void reverse_array(int *a, int n)
