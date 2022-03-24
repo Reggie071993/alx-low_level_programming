@@ -1,42 +1,27 @@
-#include<stdio.h>
-/**
-* remplace13 - function
-* @alpha: string of characters
-* @code: string of characters
-* @c: char
-* Return: char
-*/
+#include "main.h"
 
-char remplace13(char *alpha, char *code, char c)
+/**
+ * rot13 -  a function that encodes a string using rot13.
+ * @s: An input string to encode using rot13
+ * Return: An encode string
+ */
+char *rot13(char *s)
 {
 	int i = 0;
 
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	while (s[i] != '\0')
 	{
-		while (alpha[i] != c)
+		while ((s[i] >= 'a' && s[i] <= 'z') ||
+				(s[i] >= 'A' && s[i] <= 'Z'))
+		{
+			if ((s[i] >= 'a' && s[i] <= 'm') ||
+					(s[i] >= 'A' && s[i] <= 'M'))
+				s[i] += 13;
+			else
+				s[i] -= 13;
 			i++;
-		return (code[i]);
-	}
-	else
-		return (c);
-}
-
-/**
-* rot13 - a function that turns lowercase to uppercase
-* @str: string of characters
-* Return: str
-*/
-
-char	*rot13(char *str)
-{
-	int i = 0;
-	char alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char cde[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	while (str[i])
-	{
-		str[i] = remplace13(alp, cde, str[i]);
+		}
 		i++;
 	}
-	return (str);
+	return (s);
 }
