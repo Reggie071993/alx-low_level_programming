@@ -1,9 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * rot13 -  function that encodes a string using rot13.
- * @s: An input string to encode using rot13
- * Return: s An encode string
- */
+* rot13 -  function that encodes a string using rot13.
+* @s: An input string to encode using rot13
+* Return: s An encode string
+*/
 char *rot13(char *s)
 {
 	int i = 0;
