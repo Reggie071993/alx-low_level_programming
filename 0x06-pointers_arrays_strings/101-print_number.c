@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * print_number - print numbers characters
-  * @n: integer to print
-  * Return: 0
- **/
+* print_number - print numbers characters
+* _putchar - function to print
+* @n: integer to print
+* Return: 0
+*/
 
 void print_number(int n)
 {
