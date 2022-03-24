@@ -1,17 +1,15 @@
+
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 /**
-* print_number - print numbers characters
-* _putchar - function to print
-* @n: integer to print
+* print_number - function that prints numbers character
+* @n: number or integer
+*
 * Return: 0
 */
 
 void print_number(int n)
 {
-	int n1;
+	unsigned int n1;
 
 	n1 = n;
 
