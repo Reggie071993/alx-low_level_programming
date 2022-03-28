@@ -1,24 +1,23 @@
-#include "main.h"
 #include <string.h>
 /**
 * compare - function that compares
-* @A: string
-* @B: string
+* @X: string
+* @Y: string
 * Return: 1 or 0
 */
 
-int compare(const char *A, const char *B)
+int	compare(const char *X, const char *Y)
 {
-	while (*A && *B)
+	while (*X && *Y)
 	{
-		if (*A != *B)
+		if (*X != *Y)
 		{
 			return (0);
 		}
-		A++;
-		B++;
+		X++;
+		Y++;
 	}
-	return (*B == '\0');
+	return (*Y == '\0');
 }
 
 /**
