@@ -1,31 +1,47 @@
 #include "main.h"
+#include <string.h>
 /**
-* _strstr - locate substring
+* compare - function that compares
+* @X: string
+* @Y: string
+* Return: 1 or 0
+*/
+
+int compare(const char *A, const char *B)
+{
+	while (*A && *B)
+	{
+		if (*A != *B)
+		{
+			return (0);
+		}
+		A++;
+		B++;
+	}
+	return (*B == '\0');
+}
+
+/**
+* _strstr - a function that finds a substring
 * @haystack: string
-* @needle: substring
-* Return pointer or 0
+* @needle: string
+* Return: 1 or 0
 */
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, j = 0;
-	
+	int	i;
+
+	i = 0;
+	if (haystack[0] == '\0')
+		return (haystack);
 	while (haystack[i])
 	{
-		while (needle[j] && (haystack[i] == needle[0]))
+		if ((*haystack == *needle) && compare(haystack, needle))
 		{
-			if (haystack[i + j] == needle[j]
-				j++;
-			else
-				break;
+			return (haystack);
 		}
-		if (needle[j])
-		{
-			i++;
-			j = 0;
-		}
-		else
-			return (haystack + i);
+		haystack++;
 	}
-	return (0);
+	return (NULL);
 }
