@@ -25,7 +25,7 @@ int compare(const char *A, const char *B)
 * _strstr - a function that finds a substring
 * @haystack: string
 * @needle: string
-* Return: 1 or 0
+* Return: pointer or NULL
 */
 
 char *_strstr(char *haystack, char *needle)
