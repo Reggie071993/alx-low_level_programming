@@ -30,24 +30,18 @@ int compare(const char *A, const char *B)
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, j = 0;
+	int	i;
 
-	while (haystack[i]
+	i = 0;
+	if (haystack[0] == '\0')
+		return (haystack);
+	while (haystack[i])
 	{
-		while (needle[j] && (haystack[i] == needle[0]))
+		if ((*haystack == *needle) && compare(haystack, needle))
 		{
-			if (haystack[i + j] == needle[j])
-				j++;
-			else
-				break;
+			return (haystack);
 		}
-		if (needle[j])
-		{
-			i++;
-			j = 0;
-		}
-		else
-			return (haystack + i);
+		haystack++;
 	}
-	return (0);
+	return (NULL);
 }
