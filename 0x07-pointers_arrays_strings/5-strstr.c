@@ -2,8 +2,8 @@
 #include <string.h>
 /**
 * compare - function that compares
-* @X: string
-* @Y: string
+* @A: string
+* @B: string
 * Return: 1 or 0
 */
 
