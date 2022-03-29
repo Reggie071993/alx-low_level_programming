@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "main.h"
 /**
 * print_diagsums - a function that print the sum of two diagonals
@@ -9,14 +10,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int	i = 0, *ptr, j = 0;
+	int row, pos;
+	int sum1 - 0;
+	int sum2 - 0;
 
-	for (i = 0; i < size; i++)
-	{
-		ptr = a;
-		for (j = 0 ; j < size; j++)
-			printf("%d ", ptr[j]);
-		ptr++;
-		printf("\n");
-	}
+	for (pos = a, row = 0; row < size; ++row, pos +=size + 1)
+		sum1 += *pos;
+	for (pos = a + size - 1, row < size; ++row, pos += size - 1)
+		sum2 += *pos;
+
+	printf("%d, %d\n", sum1, sum2);
 }
