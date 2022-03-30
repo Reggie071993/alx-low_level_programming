@@ -47,5 +47,5 @@ int is_palindrome(char *s)
 	if (s[0] == '\0')
 		return (1);
 
-	return (palidrone(s, _strlen_recursion(s) - 1, 0));
+	return (palindrome(s, _strlen_recursion(s) - 1, 0));
 }
