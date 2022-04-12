@@ -19,6 +19,7 @@ void print_times_table(int n)
 				d = c / 100;
 				e = (c /  10) % 10;
 				f = (c % 100) % 10;
+
 				if (b == 0)
 				{
 					_putchar('0');
@@ -48,7 +49,6 @@ void print_times_table(int n)
 				}
 				else
 					_putchar('\n');
-				}
 			}
 		}
 	}
